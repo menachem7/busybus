@@ -42,7 +42,7 @@ body {
   position: fixed;
   width: 318px;
   height: 29px;
-  top: 72px;
+  top: 74px;
   margin-left: 41px;
   padding-top: 6px;
   background: #3573AE;
@@ -125,8 +125,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
 }
 
 .busRoute {
@@ -239,4 +239,8 @@ body {
 
 #busNoservice {
   background-color: #000000;
+}
+
+#busResume {
+  right: 20px;
 }
