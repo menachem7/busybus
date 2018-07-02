@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: "SF Display", sans-serif;
   font-weight: 900;
@@ -24,6 +28,7 @@ body {
   width: inherit;
   height: 131px;
   background: #3895EC;
+  font-size: 8px;
 }
 
 .searchFrom {
@@ -35,7 +40,6 @@ body {
   padding-top: 6px;
   background: #3573AE;
   border-radius: 7px;
-
 }
 
 .searchTo {
@@ -79,9 +83,11 @@ body {
   background: #E6E6E6;
 }
 
-.routeOption h1 {
+.routeOption li {
   float: left;
-  padding-left: 40px;
+  margin-top: -10px;
+  margin-left:0px;
+  margin-right: 32px;
   color: #898989;
 }
 
@@ -92,29 +98,28 @@ body {
 .infoBar {
   position: fixed;
   background-color: #FFFFFF;
+  color: #898989;
   margin: 0 auto;
   width: inherit;
   height: 48px;
   top: 170px;
+  font-size: 7.5px;
+}
+
+.infoBar li {
+  float: left;
+  margin-top: 0px;
 }
 
 .infoBar img {
-  position: absolute;
   width: 19.8px;
   height: 18.32px;
-  left: 44px;
-  top: 15px;
+  margin-left: 7px;
+  margin-top: 10px;
 }
 
 .infoBar h1 {
-  float: left;
-  margin-left: 30px;
-  padding-top: 3px;
-  color: #898989;
-}
-
-#infoText {
-  margin-left: 98px;
+  margin-left: 34px;
 }
 
 .busOption {
@@ -141,26 +146,31 @@ body {
   margin-bottom: 13px;
 }
 
+.busRoute li {
+  float: left;
+}
+
 .busNumber {
-  position: absolute;
   background: #3895EC;
   width: 42px;
   height: 42px;
   border-radius: 100px/100px;
-  left: 17px;
-  top: -7px;
   padding-top: 10px;
   color: #FFFFFF;
   font-size: 18px;
   text-align: center;
+  margin-left: -22px;
+  margin-top: 1px;
+}
+
+.busTo {
+  margin-top: -8px;
+  margin-left: 22px;
 }
 
 .busDirection {
-  position: absolute;
   width: 78px;
   height: 16px;
-  left: 80px;
-  top: 5px;
   font-size: 12px;
   padding-left: 3px;
   padding-top: 1px;
@@ -168,31 +178,31 @@ body {
 }
 
 .busDestination {
-  position: absolute;
-  left: 80px;
-  top: 25px;
   font-size: 14px;
+  margin-top: -2px;
+}
+
+.busTimes {
+  float: right;
+  margin-top: 52px;
+  margin-right: 23px;
 }
 
 .busTime1 {
-  position: absolute;
-  right: 50px;
-  top: 8px;
   font-size: 18px;
+  margin-top: -32px;
 }
 
 .busTime2 {
-  position: absolute;
-  right: 25px;
-  top: 10px;
+  margin-top: -44px;
+  margin-left: 15px;
   font-size: 12px;
   color: #898989;
 }
 
 .busTime3 {
-  position: absolute;
-  right: 25px;
-  top: 27px;
+  margin-top: -6px;
+  margin-left: 15px;
   font-size: 12px;
   color: #898989;
 }
