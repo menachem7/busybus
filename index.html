@@ -2,148 +2,262 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Busybus Routes</title>
 </head>
 <body>
-  <section class= "searchBar">
-    <h1 class="searchFrom">From: 184 Park Ave., Brooklyn, NY 10003</h1>
-    <h1 class="searchTo">To:  345 West 13th St., Brooklyn, NY 10003</h1>
-    <img id="appleUIBar" src="images/Apple-UI-Bar.png" alt="UI Bar">
-    <img id="backArrow" src="images/Back-Arrow.png" alt="Back Arrow">
-  </section>
-  <section class= "routeOption">
-    <h1 id="active">Next</h1>
-    <h1>Fastest</h1>
-    <h1>Least Stops</h1>
-    <h1>Weather</h1>
-  </section>
-  <section class= "infoBar">
-    <img src="images/Bus-Icon.jpg" alt="Bus Icon">
-    <h1 id="infoText">From: Washington/State</h1>
-    <h1>Arriving</h1>
-  </section>
+  <header class= "searchBar">
+      <h1 class="searchFrom">From: 184 Park Ave., Brooklyn, NY 10003</h1>
+      <h1 class="searchTo">To:  345 West 13th St., Brooklyn, NY 10003</h1>
+      <img id="appleUIBar" src="images/Apple-UI-Bar.png" alt="UI Bar">
+      <img id="backArrow" src="images/Back-Arrow.png" alt="Back Arrow">
+    </header>
+  <nav class= "routeOption">
+    <ul>
+      <li><h1 id="active">Next</h1></li>
+      <li><h1>Fastest</h1></li>
+      <li><h1>Least Stops</h1></li>
+      <li><h1>Weather</h1></li>
+    </ul>
+    </nav>
+  <div class= "infoBar">
+      <ul>
+        <li>
+          <img src="images/Bus-Icon.jpg" alt="Bus Icon">
+        </li>
+        <li>
+          <h1>From: Washington/State</h1>
+        </li>
+        <li>
+          <h1>Arriving</h1>
+        </li>
+      </ul>
+    </div>
   <section class= "busOption">
-    <div class="busRoute">
-      <div class="bus60">
-        <h3 class="busNumber">60</h3>
-        <h2 id="busEastbound" class="busDirection">Eastbound</h2>
-        <h1 class= "busDestination">Randolph/Harbor Dr</h1>
-        <div class="busTimes">
-          <h4 class= "busTime1">10 min</h4>
-          <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-          <h2 class="busTime2">30</h2>
-          <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-          <h2 class="busTime3">50</h2>
-          <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        </div>
-      </div>
-    </div>
-    <div class="busRoute">
-      <div class="bus124">
-        <h3 class="busNumber">124</h3>
-        <h2 id="busEastbound" class="busDirection">Eastbound</h2>
-        <h1 class= "busDestination">Navy Pier</h1>
-        <div class="busTimes">
-          <h4 class= "busTime1">15 min</h4>
-          <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-          <h2 class="busTime2">25</h2>
-          <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-          <h2 class="busTime3">35</h2>
-          <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        </div>
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 class="busNumber">151</h3>
-      <h2 id="busNorthbound" class="busDirection">Northbound</h2>
-      <h1 class= "busDestination">Devon Clark</h1>
-      <div class="busTimes">
-        <h4 class= "busTime1">16 min</h4>
-        <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2">32</h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3">48</h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 class="busNumber">J14</h3>
-      <h2 id="busSouthbound" class="busDirection">Southbound</h2>
-      <h1 class= "busDestination">103rd/Stony Island</h1>
-      <div class="busTimes">
-        <h4 class= "busTime1">5 min</h4>
-        <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2">20</h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3">35</h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 class="busNumber">124</h3>
-      <h2 id="busSouthbound" class="busDirection">Southbound</h2>
-      <h1 class= "busDestination">Navy Pier</h1>
-      <div class="busTimes">
-        <h4 class= "busTime1">8 min</h4>
-        <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2">18</h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3">28</h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 id="busReroute" class="busNumber">6x</h3>
-      <h2 id="busReroute" class="busDirection">Reroute</h2>
-      <h1 class= "busDestination">Jackson Park Express</h1>
-      <div class="busTimes">
-        <h4 class= "busTime1">n/a min</h4>
-        <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2">n/a</h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3">n/a</h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 id="busNoservice" class="busNumber">4</h3>
-      <h2 id="busNoservice" class="busDirection">No Service</h2>
-      <h1 class= "busDestination">Cottage Grove</h1>
-      <div class="busTimes">
-        <h4 id="busResume" class= "busTime1">until 12:10am</h4>
-        <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2"></h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3"></h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator"> -->
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 id="busNoservice" class="busNumber">20</h3>
-      <h2 id="busNoservice" class="busDirection">No Service</h2>
-      <h1 class= "busDestination">Madison</h1>
-      <div class="busTimes">
-        <h4 id="busResume" class= "busTime1">until 12:10am</h4>
-        <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2"></h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3"></h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator"> -->
-      </div>
-    </div>
-    <div class="busRoute">
-      <h3 id="busNoservice" class="busNumber">157</h3>
-      <h2 id="busNoservice" class="busDirection">No Service</h2>
-      <h1 class= "busDestination">Streeterville/Taylor</h1>
-      <div class="busTimes">
-        <h4 id="busResume" class= "busTime1">until 6:00am</h4>
-        <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime2"></h2>
-        <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
-        <h2 class="busTime3"></h2>
-        <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator"> -->
-      </div>
-    </div>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 class="busNumber">60</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busEastbound" class="busDirection">Eastbound</h2>
+            <h1 class= "busDestination">Randolph/Harbor Dr</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">10 min</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">30</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">50</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 class="busNumber">124</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busEastbound" class="busDirection">Eastbound</h2>
+            <h1 class= "busDestination">Navy/Pier</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">15 min</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">25</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">35</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 class="busNumber">151</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busNorthbound" class="busDirection">Northbound</h2>
+            <h1 class= "busDestination">Devon/Clark</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">16 min</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">32</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">48</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 class="busNumber">J14</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busSouthbound" class="busDirection">Southbound</h2>
+            <h1 class= "busDestination">103rd/Stony Island</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">5 min</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">20</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">35</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 class="busNumber">124</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busSouthbound" class="busDirection">Southbound</h2>
+            <h1 class= "busDestination">Navy Pier</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">8 min</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">18</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">28</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 id="busReroute" class="busNumber">6x</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busReroute" class="busDirection">Reroute</h2>
+            <h1 class= "busDestination">Jackson Park Express</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">n/a</h4>
+            <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+          <li>
+            <h2 class="busTime2">n/a</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">n/a</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li>
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 id="busNoservice" class="busNumber">4</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busNoservice" class="busDirection">No Service</h2>
+            <h1 class= "busDestination">Cottage Grove</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">at 12:10am</h4>
+            <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator"> -->
+          </li>
+          <!-- <li>
+            <h2 class="busTime2"></h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3"></h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li> -->
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 id="busNoservice" class="busNumber">20</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busNoservice" class="busDirection">No Service</h2>
+            <h1 class= "busDestination">Madison</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class= "busTime1">at 12:10am</h4>
+            <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator"> -->
+          </li>
+          <!-- <li>
+            <h2 class="busTime2">30</h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3">50</h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li> -->
+        </ul>
+    </li>
+    <li class="busRoute">
+        <ul>
+          <li>
+            <h3 id="busNoservice" class="busNumber">60</h3>
+          </li>
+        </ul>
+        <ul>
+          <li class="busTo">
+            <h2 id="busNoservice" class="busDirection">No Service</h2>
+            <h1 class= "busDestination">Streeterville/Taylor</h1>
+          </li>
+        </ul>
+        <ul class="busTimes">
+          <li>
+            <h4 class="busTime1">at 6:00am</h4>
+            <!-- <img class="iconTime1" src="images/Large-Live-Indicator.jpg" alt="Live Indicator"> -->
+          </li>
+          <!-- <li>
+            <h2 class="busTime2"></h2>
+            <img class="iconTime2" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+            <h2 class="busTime3"></h2>
+            <img class="iconTime3" src="images/Small-Live-Indicator.jpg" alt="Live Indicator">
+          </li> -->
+        </ul>
+    </li>
   </section>
 </body>
